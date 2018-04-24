@@ -65,18 +65,19 @@ function main()
         geometry.faces.push( face );
     }
 
-    material.vertexColors = THREE.FaceColors;
-    for ( var i = 0; i < nfaces; i++ )
-    {
-        geometry.faces[i].color = new THREE.Color( 1, 1, 1 );
-    }
+    //material.vertexColors = THREE.FaceColors;
+    //for ( var i = 0; i < nfaces; i++ )
+    //{
+      //  geometry.faces[i].color = new THREE.Color( 1, 1, 1 );
+    //}
+    metrial.side = THREE.DoubleSide;
 
     geometry.computeFaceNormals();
 
     var cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
 
-    document.addEventListener( 'mousedown', mouse_down_event );
+    /*document.addEventListener( 'mousedown', mouse_down_event );
     function mouse_down_event( event )
     {
         // Clicked point in window coordinates.
@@ -108,7 +109,7 @@ function main()
             intersects[0].face.color.setRGB( 1, 0, 0 );
             intersects[0].object.geometry.colorsNeedUpdate = true;
         }
-    }
+    }*/
 
     loop();
 
