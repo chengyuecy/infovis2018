@@ -70,7 +70,6 @@ function main()
     //{
       //  geometry.faces[i].color = new THREE.Color( 1, 1, 1 );
     //}
-    metrial.side = THREE.DoubleSide;
 
     geometry.computeFaceNormals();
 
