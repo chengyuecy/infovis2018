@@ -30,6 +30,11 @@ function main()
     var faces = [
         [ 0, 1, 2 ], // f0
     ];
+    var scalars = [
+        0.1, // S0
+        0.2, // S1
+        0.8 // S2
+];
 
     // Create a color map
     var cmap = [];
@@ -52,11 +57,6 @@ function main()
         'position': { 'x': 0.6, 'y': -1.1, 'z': 2 },
         'dimensions': { 'width': 0.15, 'height': 1.2 }
     } ) );
-     var scalars = [
-        0.1, // S0
-        0.2, // S1
-        0.8 // S2
-];
 
     var geometry = new THREE.Geometry();
     var material = new THREE.MeshBasicMaterial();
