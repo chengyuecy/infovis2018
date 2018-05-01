@@ -42,6 +42,11 @@ function main()
         var color = new THREE.Color( R, G, B );
         cmap.push( [ S, '0x' + color.getHexString() ] );
     }
+    var scalars = [
+        0.1, // S0
+        0.2, // S1
+        0.8 // S2
+];
 
     // Draw the color map
     var lut = new THREE.Lut( 'rainbow', cmap.length );
