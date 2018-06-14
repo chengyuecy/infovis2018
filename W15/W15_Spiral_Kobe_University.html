@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<title>W15:Spiral Kobe University</title>
+<title>WebGL Sample Code: Spiral Kobe</title>
 <meta charset="utf-8">
 
 <style type="text/css">
@@ -451,7 +451,7 @@ function setupLights() {
 
 function setupTexture() {
   gl.activeTexture(gl.TEXTURE0);
-  texture = create_texture("Kobe_University_logo.jpg");
+  texture = create_texture("kobe_u_logo_512x256.jpg");
   gl.uniform1i(uniLocation[2], 0);
 }
 
@@ -517,7 +517,7 @@ function startup() {
 
 <body onload="startup();">
   <canvas id="myGLCanvas" width="480" height="480"></canvas>
- 
+  <div class="text">webgl_spiral_kobe.  FPS: <span id="fps">--</span></div>
 </body>
 </html>
   
