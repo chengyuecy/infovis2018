@@ -451,7 +451,7 @@ function setupLights() {
 
 function setupTexture() {
   gl.activeTexture(gl.TEXTURE0);
-  texture = create_texture("kobe_u_logo_512x256.jpg");
+  texture = create_texture("Kobe University logo.jpg");
   gl.uniform1i(uniLocation[2], 0);
 }
 
